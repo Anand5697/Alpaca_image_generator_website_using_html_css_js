@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ALPACA GENERATOR</h1>
+        <div class="sub-container">
+            <div class="img-div">
+                <img src="/alpaca/backgrounds/blue50.png" id="img-backgrounds" alt="">
+                <img src="/alpaca/ears/default.png" id="img-ears" alt="">
+                <img src="/alpaca/hair/default.png" id="img-hair" alt="">
+                <img src="/alpaca/leg/default.png" id="img-leg" alt="">
+                <img src="/alpaca/neck/default.png" id="img-neck" alt="">
+                <img src="/alpaca/nose.png" alt="">
+                <img src="/alpaca/mouth/default.png" id="img-mouth" alt="">
+                <img src="/alpaca/accessories/earings.png" id="img-accessories" alt="">
+                <img src="/alpaca/eyes/default.png" id="img-eyes" alt="">
+            </div>
+            <div class="option-list">
+                <h2>Accessorize the ALPACA's</h2>
+                <button onclick="hair()">Hair</button>
+                <button onclick="ears()">Ears</button>
+                <button onclick="eyes()">Eyes</button>
+                <br>
+                <button onclick="mouth()">Mouth</button>
+                <button onclick="neck()">Neck</button>
+                <button onclick="legs()">legs</button>
+                <br>
+                <button onclick="accessories()">Accessories</button>
+                <button onclick="background()">Background</button>
+                <button onclick="randomSelect()">Random</button>
+                <p>Style</p>
+                <div id="sub_option_list">
+                    
+                </div>
+            </div>
+        </div>
+        <button class="img-download" >Download</button>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
