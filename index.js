@@ -1,5 +1,9 @@
+// html element selevted for DOM
+
 subOptionList = document.getElementById("sub_option_list");
 imgDiv = document.getElementById("img-div");
+
+// data for the page
 
 accessorieslist = ["Earings", "flower", "glasses", "Headphone"];
 backgroundlist = [
@@ -57,21 +61,22 @@ accessorizeArrayList = [
   necklist,
 ];
 
+// function for randomizing the image
+
 function randomSelect() {
   i = 0;
   accessorizeList.forEach((y) => {
     iy = "img-" + y;
-    console.log(iy);
     ino = accessorizeArrayList[i].length;
-    console.log(ino);
     ry = Math.floor(Math.random() * (ino - 0) + 0);
-    console.log(ry);
-    // console.log();
     document.getElementById(iy).src =
       "/alpaca/" + y + "/" + accessorizeArrayList[i][ry] + ".png";
     i++;
   });
 }
+
+// fumction for adding button element
+
 function addButton(x, y) {
   btn = document.createElement("button");
   btn.addEventListener("click", function () {
@@ -83,13 +88,17 @@ function addButton(x, y) {
   btnValue = document.createTextNode(x);
   btn.appendChild(btnValue);
   document.getElementById("sub_option_list").appendChild(btn);
-  // console.log(x.index);
 }
+
+//  fumction for clearing the div childs
+
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
 }
+
+//  functions for adding childs buttons
 
 function accessories() {
   removeAllChildNodes(subOptionList);
